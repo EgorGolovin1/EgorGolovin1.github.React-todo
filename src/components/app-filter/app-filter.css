@@ -1,0 +1,65 @@
+
+.app-filter {
+    width: 450px;
+    height: 110px;
+    margin-top: 10px;
+    background-color: #e0f0e5;
+    opacity: 0.7;
+    border-radius: 2px 2px 20px 20px;
+    font-size: 14px;
+    padding: 5px 15px;
+    overflow: hidden;
+}
+@media (min-width: 0px) and (max-width: 988px) {
+    .app-filter {
+        width: 310px;
+    }
+}
+
+.buttons-wrapper {
+    display: flex;
+    justify-content: center;
+}
+.app-filter .app-filter-score-tasks {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: fit-content;
+}
+.app-filter .btn {
+    height: fit-content;
+    border: none;
+    background: none;
+    padding: 2px 2px 0px 2px;
+    font-size: 16px;
+    overflow-block: hidden;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    box-shadow: none;
+    margin: 10px 10px 0px 0px;
+}
+@media (min-width: 0px) and (max-width: 988px) {
+    .app-filter .btn {
+        font-size: 12px;
+        margin: 10px 10px 0px 0px;
+    }
+}
+.app-filter .btn:hover {
+    border-bottom: 2px solid #286562;
+    color: #286562;
+}
+.app-filter .btn.tabbed {
+    border-bottom: 2px solid #efa501;
+    color: #efa501;
+}
+.btn.clear-completed,
+.btn.clear-all {
+    display: inline-block;
+}
+.btn.clear-completed:hover,
+.btn.clear-all:hover {
+    text-decoration: underline;
+    color: #e3535d;
+    border-bottom: none;
+}

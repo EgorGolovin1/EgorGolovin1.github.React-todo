@@ -1,0 +1,52 @@
+.add-input {
+    width: 550px;
+    height: 65px;
+    padding: 16px 120px 16px 60px;
+    font-size: 24px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.4);
+    background: #ffffff;
+}
+@media (min-width: 0px) and (max-width: 988px) {
+    .add-input {
+        width: 350px;
+        height: 45px;
+        padding: 8px 95px 8px 30px;
+        font-size: 16px;
+    }
+}
+.add-input::placeholder {
+    color: #a6a6a6;
+    font-style: italic;
+}
+.add-input:focus-visible {
+    outline: none;
+}
+.add-input:focus {
+    outline: none;
+}
+.add-form {
+    position: relative;
+}
+.add-btn {
+    width: 80px;
+    height: 30px;
+    border-radius: 30px;
+    font-size: 14px;
+    position: absolute;
+    left: 450px;
+    top: 18px;
+    border: none;
+    background: #3b7e7b;
+    color: #ffffff;
+}
+@media (min-width: 0px) and (max-width: 988px) {
+    .add-btn {
+        width: 75px;
+        height: 25px;
+        left: 263px;
+        top: 10px;
+        font-size: 10px;
+    }
+}

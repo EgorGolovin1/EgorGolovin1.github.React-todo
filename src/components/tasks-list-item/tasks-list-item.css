@@ -1,0 +1,170 @@
+
+.tasks-item {
+    display: flex;
+    position: relative;
+    width: 470px;
+    height: fit-content;
+    background-color: #ffff00;
+    padding: 12px 120px 12px 12px;
+    border-radius: 30px;
+    margin-top: 20px;
+    opacity: 0.8;
+    word-break: break-all;
+}
+@media (min-width: 0px) and (max-width: 988px) {
+    .tasks-item {
+        width: 320px;
+        height: fit-content;
+        margin-top: 15px;
+        padding: 10px 80px 10px 20px;
+    }
+}
+.tasks-item-description {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.7;
+    width: inherit;
+    height: fit-content;
+}
+@media (min-width: 0px) and (max-width: 988px) {
+    .tasks-item-description {
+        line-height: 1.4;
+    }
+}
+.tasks-item.deleting {
+    background-color: #ff7f50;
+    opacity: 0.9;
+    transform: translateX(250px) scale(0.8);
+    transition: 0.4s;
+}
+@media (min-width: 0px) and (max-width: 988px) {
+    .tasks-item.deleting {
+        transform: translateX(80px) scale(0.8);
+    }
+}
+.tasks-item .tasks-btn-complete:hover {
+    background: #32cd32;
+}
+.tasks-item.checked {
+    background-color: #32cd32;
+    opacity: 0.8;
+}
+.tasks-item.checked .tasks-btn-complete:hover {
+    background: #ce2525;
+}
+
+.tasks-buttons {
+    position: absolute;
+    left: 380px;
+    display: flex;
+}
+@media (min-width: 0px) and (max-width: 988px) {
+    .tasks-buttons {
+        left: 240px;
+    }
+}
+.tasks-btn-delete {
+    width: 25px;
+    height: 25px;
+    background: rgba(0, 0, 0, 0);
+    position: absolute;
+    cursor: pointer;
+    position: relative;
+    padding-top: 10px;
+    background-image: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+.tasks-btn-delete::before {
+    content: "";
+    border-right: 25px solid #ce2525;
+    width: 25px;
+    height: 3px;
+    position: absolute;
+    transform: rotate(135deg);
+}
+@media (min-width: 0px) and (max-width: 988px) {
+    .tasks-btn-delete::before {
+        border-right: 20px solid #ce2525;
+        width: 20px;
+    }
+}
+.tasks-btn-delete::after {
+    content: "";
+    border-right: 25px solid #ce2525;
+    height: 3px;
+    position: absolute;
+    transform: rotate(45deg);
+}
+@media (min-width: 0px) and (max-width: 988px) {
+    .tasks-btn-delete::after {
+        border-right: 20px solid #ce2525;
+        width: 20px;
+    }
+}
+.tasks-btn-delete:hover::after {
+    transition: 0.5s;
+    transform: rotate(135deg);
+}
+.tasks-btn-delete:hover::before {
+    transition: 0.5s;
+    transform: rotate(225deg);
+}
+
+.tasks-btn-complete {
+    margin-right: 5px;
+    height: 25px;
+    width: 25px;
+    border-radius: 50px;
+    background-image: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    box-shadow: none;
+    background: #ffffff;
+    padding: 7px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+@media (min-width: 0px) and (max-width: 988px) {
+    .tasks-btn-complete {
+        height: 20px;
+        width: 20px;
+        padding: 5px;
+    }
+}
+.tasks-btn-complete:focus-visible {
+    outline: none;
+}
+.tasks-btn-complete:checked .tasks-item {
+    background-color: red;
+}
+.tasks-btn-complete:checked::before {
+    content: "";
+    border-top: 2px solid #00ff00;
+    border-right: 2px solid #00ff00;
+    width: 12.24px;
+    height: 7.12px;
+    position: absolute;
+    transform: rotate(135deg);
+}
+@media (min-width: 0px) and (max-width: 988px) {
+    .tasks-btn-complete:checked::before {
+        width: 12.24px;
+        height: 7.12px;
+    }
+}
+.tasks-btn-complete:hover {
+    transition: 0.5s;
+}
+.tasks-btn-complete:hover::before {
+    content: "";
+    border-top: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+    width: 12.24px;
+    height: 7.12px;
+    position: absolute;
+    transform: rotate(135deg);
+}
+
+
