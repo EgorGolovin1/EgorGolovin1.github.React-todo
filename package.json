@@ -2,7 +2,7 @@
   "name": "new-todo",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://egorgolovin1.github.io/EgorGolovin.github.io/",
+  "homepage": "https://egorgolovin1.github.io/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
@@ -19,7 +19,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
